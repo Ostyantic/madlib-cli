@@ -7,14 +7,13 @@ def open_and_read(file_path):
     """
     with open(file_path, 'r') as file:
         print(file.read())
+        return file.read()
 
 
 def open_and_write(file_path):
     """
-    A function that takes in the file's path as a parameter.
-    The file passed through is opened and writes a new piece
-    of text to be read.
-    :param file_path: the route
+
+    :param file_path: The route of the file path
     :return: No Return
     """
     with open(file_path, 'w') as file:
@@ -22,7 +21,17 @@ def open_and_write(file_path):
 
 
 def read_template(file_path):
+    """
+    Function that opens and reads a file template
+    :param file_path: The route of the file path
+    :return: The contents of the file as a string
+    """
     with open(file_path, 'r') as file:
         # print(file.read())
         return file.read()
+
+
+def merge(string, tpl):
+    return string.format(*tpl)
+
 
