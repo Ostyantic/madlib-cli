@@ -107,7 +107,7 @@ def get_user_selection(tpl):
     """
     Function that takes a tuple of descriptions,
     iterates over the tuple and gets the input
-    :param tpl:
+    :param tpl: A tuple of descriptive words
     :return: A tuple of user input
     """
     users_words = []
