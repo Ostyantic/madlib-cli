@@ -1,5 +1,11 @@
 import pytest
-from madlib_cli.output import read_template, merge, parse_template
+from madlib_cli.output import *
+
+
+# def test_get_user_selection():
+#     actual = get_user_selection(("Animal", "Number", "Gender"))
+#     expected = ("Lion", "5", "Male")
+#     assert actual == expected
 
 
 def test_read_template_returns_stripped_string():
