@@ -35,4 +35,3 @@ def play_game_three():
 
     # print(string)
     # print(descriptions)
-
